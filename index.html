@@ -1,57 +1,265 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nirob Nurshahe - Portfolio</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-header { background: #222; color: white; text-align: center; padding: 50px 20px; }
-section { padding: 40px 20px; max-width: 900px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; }
-h1, h2 { margin: 0 0 20px 0; }
-.skills span { display: inline-block; background: #e0e0e0; padding: 8px 12px; margin: 5px; border-radius: 4px; }
-footer { text-align: center; padding: 20px; margin-top: 30px; color: #555; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title data-lang="pageTitle-bn">নিরব নূরশাহী - পোর্টফোলিও</title>
+    <title data-lang="pageTitle-en" style="display:none;">Nirab Nurshahi - Portfolio</title>
+    
+    <style>
+        /* বেসিক স্টাইল */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* হেডার স্টাইল */
+        header {
+            background: #ffffff;
+            color: #333;
+            padding-top: 30px;
+            min-height: 250px;
+            text-align: center;
+            border-bottom: 5px solid #007BFF;
+        }
+
+        /* প্রোফাইল ছবি */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* ছবি গোল করবে */
+            border: 5px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+            color: #007BFF;
+        }
+
+        header p {
+            font-size: 19px;
+            color: #555;
+        }
+
+        /* ভাষা পরিবর্তনের বাটন */
+        .lang-switcher {
+            text-align: right;
+            padding-bottom: 10px;
+        }
+
+        .lang-switcher button {
+            background: #ddd;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .lang-switcher button:hover {
+            background: #ccc;
+        }
+        /* সচল বাটনের স্টাইল */
+        .lang-switcher button.active {
+            background: #007BFF;
+            color: white;
+        }
+
+        /* সেকশন স্টাইল */
+        section {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* আগ্রহের লিস্ট */
+        .interests ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .interests li {
+            background: #007bff21;
+            color: #0056b3;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            border-left: 5px solid #007BFF;
+        }
+
+        /* যোগাযোগ */
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* ফুটার */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #333;
+            color: #ffffff;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-<header>
-<h1>Md. Nirob Nurshahe</h1>
-<p>Civil Engineer</p>
-<p><em>Passionate about Smart Construction & Technology</em></p>
-</header>
 
-<section>
-<h2>About Me</h2>
-<p>I am a Civil Engineer with experience in building construction, site supervision, estimation, and project planning. I have a strong interest in technology and creative problem-solving.</p>
-</section>
+    <header>
+        <div class="container">
+            <div class="lang-switcher">
+                <button id="lang-bn" class="active">বাংলা</button>
+                <button id="lang-en">English</button>
+            </div>
 
-<section>
-<h2>Skills</h2>
-<div class="skills">
-<span>AutoCAD</span>
-<span>BOQ Estimation</span>
-<span>Site Supervision</span>
-<span>MS Excel</span>
-<span>Project Planning</span>
-</div>
-</section>
+            <img src="profile.png" alt="নিরব নূরশাহী" class="profile-pic">
 
-<section>
-<h2>Projects</h2>
-<ul>
-<li>Residential Building Project - Bashundhara (2024)</li>
-<li>Commercial Construction Planning - Dhaka (Sample)</li>
-</ul>
-</section>
+            <h1 data-lang="name">নিরব নূরশাহী</h1>
+            <p data-lang="profession">সিভিল ইঞ্জিনিয়ার | বেসরকারি চাকুরিজীবী</p>
+        </div>
+    </header>
 
-<section>
-<h2>Contact</h2>
-<p>Email: example@example.com</p>
-</section>
+    <main class="container">
+        <section class="about-me">
+            <h2 data-lang="aboutTitle">আমার সম্পর্কে</h2>
+            <p data-lang="aboutText">
+                আমার নাম নিরব নূরশাহী, বয়স ২৪ বছর। আমি একজন সিভিল ইঞ্জিনিয়ার এবং বর্তমানে একটি বেসরকারি প্রতিষ্ঠানে কর্মরত। টেকনোলজির প্রতি আমার গভীর আগ্রহ রয়েছে এবং আমি প্রায়ই বিভিন্ন ক্রিয়েটিভ কাজ ও গবেষণা করতে পছন্দ করি।
+            </p>
+        </section>
 
-<footer>
-© 2025 Md. Nirob Nurshahe
-</footer>
+        <section class="interests">
+            <h2 data-lang="interestsTitle">আগ্রহ ও শখ</h2>
+            <ul>
+                <li data-lang="interest1">টেকনোলজি ও গ্যাজেট</li>
+                <li data-lang="interest2">ক্রিয়েটিভ ডিজাইন</li>
+                <li data-lang="interest3">গবেষণা ও নতুন কিছু শেখা</li>
+                <li data-lang="interest4">প্রকৌশল সমাধান</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2 data-lang="contactTitle">যোগাযোগ</h2>
+            <p data-lang="contactText">আমার সাথে যোগাযোগের জন্য ইমেল করুন:</p>
+            <a href="mailto:your-email@example.com">[আপনার ইমেল অ্যাড্রেস লিখুন]</a>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang="footerText">&copy; ২০২৫ নিরব নূরশাহী। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        // সব অনুবাদ এক জায়গায় রাখা হলো
+        const translations = {
+            "bn": {
+                "pageTitle": "নিরব নূরশাহী - পোর্টফোলিও",
+                "name": "নিরব নূরশাহী",
+                "profession": "সিভিল ইঞ্জিনিয়ার | বেসরকারি চাকুরিজীবী",
+                "aboutTitle": "আমার সম্পর্কে",
+                "aboutText": "আমার নাম নিরব নূরশাহী, বয়স ২৪ বছর। আমি একজন সিভিল ইঞ্জিনিয়ার এবং বর্তমানে একটি বেসরকারি প্রতিষ্ঠানে কর্মরত। টেকনোলজির প্রতি আমার গভীর আগ্রহ রয়েছে এবং আমি প্রায়ই বিভিন্ন ক্রিয়েটিভ কাজ ও গবেষণা করতে পছন্দ করি।",
+                "interestsTitle": "আগ্রহ ও শখ",
+                "interest1": "টেকনোলজি ও গ্যাজেট",
+                "interest2": "ক্রিয়েটিভ ডিজাইন",
+                "interest3": "গবেষণা ও নতুন কিছু শেখা",
+                "interest4": "প্রকৌশল সমাধান",
+                "contactTitle": "যোগাযোগ",
+                "contactText": "আমার সাথে যোগাযোগের জন্য ইমেল করুন:",
+                "footerText": "&copy; ২০২৫ নিরব নূরশাহী। সর্বস্বত্ব সংরক্ষিত।"
+            },
+            "en": {
+                "pageTitle": "Nirab Nurshahi - Portfolio",
+                "name": "Nirab Nurshahi",
+                "profession": "Civil Engineer | Private Service Holder",
+                "aboutTitle": "About Me",
+                "aboutText": "My name is Nirab Nurshahi, age 24. I am a Civil Engineer currently working in a private company. I have a deep interest in technology and I often enjoy doing various creative tasks and research.",
+                "interestsTitle": "Interests & Hobbies",
+                "interest1": "Technology & Gadgets",
+                "interest2": "Creative Design",
+                "interest3": "Research & Learning New Things",
+                "interest4": "Engineering Solutions",
+                "contactTitle": "Contact",
+                "contactText": "To contact me, please email at:",
+                "footerText": "&copy; 2025 Nirab Nurshahi. All rights reserved."
+            }
+        };
+
+        // যখন পেজ লোড হবে
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const langBnBtn = document.getElementById('lang-bn');
+            const langEnBtn = document.getElementById('lang-en');
+
+            // ভাষা পরিবর্তন করার ফাংশন
+            function changeLanguage(lang) {
+                // সব টেক্সট এলিমেন্ট খুঁজে বের করা
+                document.querySelectorAll('[data-lang]').forEach(element => {
+                    const key = element.getAttribute('data-lang');
+                    if (translations[lang][key]) {
+                        element.innerHTML = translations[lang][key];
+                    }
+                });
+
+                // টাইটেল পরিবর্তন
+                document.title = translations[lang]['pageTitle'];
+
+                // বাটন অ্যাক্টিভ করা
+                if (lang === 'bn') {
+                    langBnBtn.classList.add('active');
+                    langEnBtn.classList.remove('active');
+                    document.documentElement.lang = 'bn';
+                } else {
+                    langBnBtn.classList.remove('active');
+                    langEnBtn.classList.add('active');
+                    document.documentElement.lang = 'en';
+                }
+            }
+
+            // বাংলা বাটনে ক্লিক করলে
+            langBnBtn.addEventListener('click', () => {
+                changeLanguage('bn');
+            });
+
+            // ইংরেজি বাটনে ক্লিক করলে
+            langEnBtn.addEventListener('click', () => {
+                changeLanguage('en');
+            });
+
+            // প্রথমবার পেজ লোড হলে বাংলাকে ডিফল্ট রাখা
+            changeLanguage('bn');
+        });
+    </script>
+
 </body>
 </html>
