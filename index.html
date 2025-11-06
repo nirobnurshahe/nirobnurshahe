@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title data-lang="pageTitle-bn">নিরব নূরশাহী - পোর্টফোলিও</title>
-    <title data-lang="pageTitle-en" style="display:none;">Md.Nirab Nurshahe - Portfolio</title>
+    <title data-lang="pageTitle">মোঃ নিরব নূরশাহী - পোর্টফোলিও</title>
     
     <style>
         /* বেসিক স্টাইল */
@@ -98,6 +97,28 @@
             margin-top: 0;
         }
 
+        /* কাজের/শিক্ষার আইটেম স্টাইল */
+        .work-item, .education-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #007BFF;
+        }
+
+        .work-item h3, .education-item h3 {
+            margin: 0 0 5px 0;
+            color: #007BFF;
+            font-size: 20px;
+        }
+        
+        .work-item p, .education-item p {
+            margin: 0 0 10px 0;
+        }
+
+        .work-item ul, .education-item ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
         /* আগ্রহের লিস্ট */
         .interests ul {
             list-style: none;
@@ -144,7 +165,7 @@
                 <button id="lang-en">English</button>
             </div>
 
-            <img src="profile.JPEG" alt="নিরব নূরশাহী" class="profile-pic">
+            <img src="profile.png" alt="মোঃ নিরব নূরশাহী" class="profile-pic">
 
             <h1 data-lang="name">মোঃ নিরব নূরশাহী</h1>
             <p data-lang="profession">সিভিল ইঞ্জিনিয়ার | বেসরকারি চাকুরিজীবী</p>
@@ -155,65 +176,98 @@
         <section class="about-me">
             <h2 data-lang="aboutTitle">আমার সম্পর্কে</h2>
             <p data-lang="aboutText">
-                আমি মোঃ নিরব নূরশাহী, বয়স ২৪ বছর। আমি একজন সিভিল ইঞ্জিনিয়ার এবং বর্তমানে একটি বেসরকারি প্রতিষ্ঠানে কর্মরত। বিল্ডিং কনস্ট্রাকশন, সাইট সুপারভিশন, এস্টিমেশন এবং প্রোজেক্ট ম্যানেজমেন্টে আমার বাস্তব অভিজ্ঞতা রয়েছে। কাজের পাশাপাশি টেকনোলজির প্রতি আমার গভীর আগ্রহ রয়েছে, বিশেষ করে এমন প্রযুক্তি যা ইঞ্জিনিয়ারিং কাজকে আরও সহজ, কার্যকর ও আধুনিক করে।
-
-আমি নতুন কিছু শেখা, সৃজনশীল প্রজেক্ট নিয়ে কাজ করা এবং গবেষণামূলক কার্যক্রমে অংশ নিতে ভালোবাসি। নিজের দক্ষতা ও জ্ঞানকে আরও উন্নত করে ভবিষ্যতে একটি স্মার্ট ও টেকসই নির্মাণ ব্যবস্থার দিকে কাজ করাই আমার লক্ষ্য।
+                আমার নাম **মোঃ নিরব নূরশাহী**, বয়স **২৫ বছর**। আমি একজন সিভিল ইঞ্জিনিয়ার এবং বর্তমানে একটি বেসরকারি প্রতিষ্ঠানে কর্মরত। **বিল্ডিং কনস্ট্রাকশন, সাইট সুপারভিশন, এস্টিমেশন এবং প্রোজেক্ট ম্যানেজমেন্টে** আমার বাস্তব অভিজ্ঞতা রয়েছে। কাজের পাশাপাশি **টেকনোলজির প্রতি আমার গভীর আগ্রহ রয়েছে**, বিশেষ করে এমন প্রযুক্তি যা ইঞ্জিনিয়ারিং কাজকে আরও সহজ, কার্যকর ও আধুনিক করে। আমি নতুন কিছু শেখা, সৃজনশীল প্রজেক্ট নিয়ে কাজ করা এবং গবেষণামূলক কার্যক্রমে অংশ নিতে ভালোবাসি। নিজের দক্ষতা ও জ্ঞানকে আরও উন্নত করে ভবিষ্যতে একটি **স্মার্ট ও টেকসই নির্মাণ ব্যবস্থার** দিকে কাজ করাই আমার লক্ষ্য।
             </p>
         </section>
 
+        <section class="work-experience">
+            <h2 data-lang="workTitle">কর্ম অভিজ্ঞতা</h2>
+            <div class="work-item">
+                <h3 data-lang="workJobTitle">সিভিল ইঞ্জিনিয়ার</h3>
+                <p data-lang="workCompany">একটি বেসরকারি নির্মাণ প্রতিষ্ঠান</p>
+                <p data-lang="workDuration" class="work-duration">জানুয়ারি ২০২১ - বর্তমান</p>
+                <ul data-lang="workResponsibilities">
+                    <li>অটোক্যাড (AutoCAD) ব্যবহার করে নির্ভুল নির্মাণ ড্রইং ও প্ল্যান তৈরি ও সংশোধন করা।</li>
+                    <li>নির্মাণ সাইটের দৈনন্দিন কাজ তদারকি ও মান নিয়ন্ত্রণ (Site Supervision and Quality Control)।</li>
+                    <li>বিভিন্ন কাঠামোগত কাজের পরিমাণ নির্ণয় (Quantity Survey and Estimation)।</li>
+                    <li>প্রোজেক্টের সময়সীমা ও বাজেট নিয়ন্ত্রণ করে সফলভাবে কাজ সম্পন্ন করা।</li>
+                </ul>
+            </div>
+        </section>
+        
         <section class="interests">
-            <h2 data-lang="interestsTitle">আগ্রহ ও শখ</h2>
+            <h2 data-lang="interestsTitle">আগ্রহ ও দক্ষতা</h2>
             <ul>
-                <li data-lang="interest1">টেকনোলজি ও গ্যাজেট</li>
-                <li data-lang="interest2">ক্রিয়েটিভ ডিজাইন</li>
-                <li data-lang="interest3">গবেষণা ও নতুন কিছু শেখা</li>
-                <li data-lang="interest4">প্রকৌশল সমাধান</li>
+                <li data-lang="interest1">বিল্ডিং কনস্ট্রাকশন ও সাইট সুপারভিশন</li>
+                <li data-lang="interest2">এস্টিমেশন ও প্রোজেক্ট ম্যানেজমেন্ট</li>
+                <li data-lang="interest3">স্মার্ট নির্মাণ প্রযুক্তি ও গবেষণা</li>
+                <li data-lang="interest4">ক্রিয়েটিভ ডিজাইন ও ইঞ্জিনিয়ারিং সলিউশন (AutoCAD, SketchUp)</li>
             </ul>
         </section>
 
         <section class="contact">
             <h2 data-lang="contactTitle">যোগাযোগ</h2>
             <p data-lang="contactText">আমার সাথে যোগাযোগের জন্য ইমেল করুন:</p>
-            <a href="mailto:info.nirobnurshahe@gmail.com">[info.nirobnurshahe@gmail.com]</a>
+            <a href="mailto:info.nirobnurshahe@gmail.com">info.nirobnurshahe@gmail.com</a>
         </section>
     </main>
 
     <footer>
-        <p data-lang="footerText">&copy; ২০২৫ নিরব নূরশাহী। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p data-lang="footerText">&copy; ২০২৫ মোঃ নিরব নূরশাহী। সর্বস্বত্ব সংরক্ষিত।</p>
     </footer>
 
     <script>
         // সব অনুবাদ এক জায়গায় রাখা হলো
         const translations = {
             "bn": {
-                "pageTitle": "নিরব নূরশাহী - পোর্টফোলিও",
-                "name": "নিরব নূরশাহী",
+                "pageTitle": "মোঃ নিরব নূরশাহী - পোর্টফোলিও",
+                "name": "মোঃ নিরব নূরশাহী",
                 "profession": "সিভিল ইঞ্জিনিয়ার | বেসরকারি চাকুরিজীবী",
                 "aboutTitle": "আমার সম্পর্কে",
-                "aboutText": "আমার নাম নিরব নূরশাহী, বয়স ২৪ বছর। আমি একজন সিভিল ইঞ্জিনিয়ার এবং বর্তমানে একটি বেসরকারি প্রতিষ্ঠানে কর্মরত। টেকনোলজির প্রতি আমার গভীর আগ্রহ রয়েছে এবং আমি প্রায়ই বিভিন্ন ক্রিয়েটিভ কাজ ও গবেষণা করতে পছন্দ করি।",
-                "interestsTitle": "আগ্রহ ও শখ",
-                "interest1": "টেকনোলজি ও গ্যাজেট",
-                "interest2": "ক্রিয়েটিভ ডিজাইন",
-                "interest3": "গবেষণা ও নতুন কিছু শেখা",
-                "interest4": "প্রকৌশল সমাধান",
+                "aboutText": "আমার নাম মোঃ নিরব নূরশাহী, বয়স ২৫ বছর। আমি একজন সিভিল ইঞ্জিনিয়ার এবং বর্তমানে একটি বেসরকারি প্রতিষ্ঠানে কর্মরত। বিল্ডিং কনস্ট্রাকশন, সাইট সুপারভিশন, এস্টিমেশন এবং প্রোজেক্ট ম্যানেজমেন্টে আমার বাস্তব অভিজ্ঞতা রয়েছে। কাজের পাশাপাশি টেকনোলজির প্রতি আমার গভীর আগ্রহ রয়েছে, বিশেষ করে এমন প্রযুক্তি যা ইঞ্জিনিয়ারিং কাজকে আরও সহজ, কার্যকর ও আধুনিক করে। আমি নতুন কিছু শেখা, সৃজনশীল প্রজেক্ট নিয়ে কাজ করা এবং গবেষণামূলক কার্যক্রমে অংশ নিতে ভালোবাসি। নিজের দক্ষতা ও জ্ঞানকে আরও উন্নত করে ভবিষ্যতে একটি স্মার্ট ও টেকসই নির্মাণ ব্যবস্থার দিকে কাজ করাই আমার লক্ষ্য।",
+                
+                // কর্ম অভিজ্ঞতার অনুবাদ
+                "workTitle": "কর্ম অভিজ্ঞতা",
+                "workJobTitle": "সিভিল ইঞ্জিনিয়ার",
+                "workCompany": "একটি বেসরকারি নির্মাণ প্রতিষ্ঠান",
+                "workDuration": "জানুয়ারি ২০২১ - বর্তমান", 
+                "workResponsibilities": "<li>অটোক্যাড (AutoCAD) ব্যবহার করে নির্ভুল নির্মাণ ড্রইং ও প্ল্যান তৈরি ও সংশোধন করা।</li><li>নির্মাণ সাইটের দৈনন্দিন কাজ তদারকি ও মান নিয়ন্ত্রণ (Site Supervision and Quality Control)।</li><li>বিভিন্ন কাঠামোগত কাজের পরিমাণ নির্ণয় (Quantity Survey and Estimation)।</li><li>প্রোজেক্টের সময়সীমা ও বাজেট নিয়ন্ত্রণ করে সফলভাবে কাজ সম্পন্ন করা।</li>",
+                
+                "interestsTitle": "আগ্রহ ও দক্ষতা",
+                "interest1": "বিল্ডিং কনস্ট্রাকশন ও সাইট সুপারভিশন",
+                "interest2": "এস্টিমেশন ও প্রোজেক্ট ম্যানেজমেন্ট",
+                "interest3": "স্মার্ট নির্মাণ প্রযুক্তি ও গবেষণা",
+                "interest4": "ক্রিয়েটিভ ডিজাইন ও ইঞ্জিনিয়ারিং সলিউশন (AutoCAD, SketchUp)",
                 "contactTitle": "যোগাযোগ",
                 "contactText": "আমার সাথে যোগাযোগের জন্য ইমেল করুন:",
-                "footerText": "&copy; ২০২৫ নিরব নূরশাহী। সর্বস্বত্ব সংরক্ষিত।"
+                
+                // *** কপিরাইট সংশোধন করা হয়েছে (বাংলা) ***
+                "footerText": "&copy; ২০২৫ মোঃ নিরব নূরশাহী। সর্বস্বত্ব সংরক্ষিত।"
             },
             "en": {
-                "pageTitle": "Nirab Nurshahi - Portfolio",
-                "name": "Nirab Nurshahi",
+                "pageTitle": "Md. Nirob Nurshahe - Portfolio",
+                "name": "Md. Nirob Nurshahe",
                 "profession": "Civil Engineer | Private Service Holder",
                 "aboutTitle": "About Me",
-                "aboutText": "My name is Nirab Nurshahi, age 24. I am a Civil Engineer currently working in a private company. I have a deep interest in technology and I often enjoy doing various creative tasks and research.",
-                "interestsTitle": "Interests & Hobbies",
-                "interest1": "Technology & Gadgets",
-                "interest2": "Creative Design",
-                "interest3": "Research & Learning New Things",
-                "interest4": "Engineering Solutions",
+                "aboutText": "My name is Md. Nirob Nurshahe, age 25. I am a Civil Engineer currently working in a private company. I have practical experience in Building Construction, Site Supervision, Estimation, and Project Management. Alongside my work, I have a deep interest in technology, especially tech that makes engineering work easier, more efficient, and modern. I love learning new things, working on creative projects, and participating in research activities. My goal is to enhance my skills and knowledge to contribute towards a smart and sustainable construction system in the future.",
+                
+                // কর্ম অভিজ্ঞতার অনুবাদ
+                "workTitle": "Work Experience",
+                "workJobTitle": "Civil Engineer",
+                "workCompany": "A Private Construction Firm",
+                "workDuration": "January 2021 - Present", 
+                "workResponsibilities": "<li>Creating and modifying precise construction drawings and plans using AutoCAD.</li><li>Overseeing day-to-day site work and ensuring quality control (Site Supervision and Quality Control).</li><li>Quantity Survey and Estimation for various structural works.</li><li>Successfully completing projects by controlling schedule and budget.</li>",
+                
+                "interestsTitle": "Interests & Expertise",
+                "interest1": "Building Construction & Site Supervision",
+                "interest2": "Estimation & Project Management",
+                "interest3": "Smart Construction Technology & Research",
+                "interest4": "Creative Design & Engineering Solutions (AutoCAD, SketchUp)",
                 "contactTitle": "Contact",
                 "contactText": "To contact me, please email at:",
-                "footerText": "&copy; 2025 Nirab Nurshahi. All rights reserved."
+                
+                // *** কপিরাইট সংশোধন করা হয়েছে (ইংরেজি) ***
+                "footerText": "All Copy Right 2025 Md. Nirob Nurshahe. All rights reserved."
             }
         };
 
@@ -222,16 +276,34 @@
             
             const langBnBtn = document.getElementById('lang-bn');
             const langEnBtn = document.getElementById('lang-en');
+            
+            // ডাটা-ল্যাং যুক্ত করা হয়নি এমন এলিমেন্টগুলির তালিকা (যেমন workDuration)
+            const elementsToUpdateManually = [
+                { selector: '.work-duration', key: 'workDuration' },
+            ];
 
             // ভাষা পরিবর্তন করার ফাংশন
             function changeLanguage(lang) {
                 // সব টেক্সট এলিমেন্ট খুঁজে বের করা
                 document.querySelectorAll('[data-lang]').forEach(element => {
                     const key = element.getAttribute('data-lang');
-                    if (translations[lang][key]) {
-                        element.innerHTML = translations[lang][key];
+                    // li-ভিত্তিক কন্টেন্টের জন্য innerHTML ব্যবহার করা হয়েছে
+                    if (key === 'workResponsibilities') {
+                         element.innerHTML = translations[lang][key];
+                    }
+                    else if (translations[lang][key]) {
+                        element.textContent = translations[lang][key];
                     }
                 });
+
+                // ম্যানুয়ালি আপডেট করার এলিমেন্টগুলি আপডেট করা
+                elementsToUpdateManually.forEach(item => {
+                    const element = document.querySelector(item.selector);
+                    if (element) {
+                        element.textContent = translations[lang][item.key];
+                    }
+                });
+
 
                 // টাইটেল পরিবর্তন
                 document.title = translations[lang]['pageTitle'];
